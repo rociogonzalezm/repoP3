@@ -73,8 +73,6 @@ Consejos para el desarrollo: Piense como puede saber cuál ha sido el último op
 
 IMPORTANTE: Se deben añadir los eventos a los botones utilizando addEventListener. Todas las funciones que se definan deben emplear la notación arrow. Todas las funciones deben tener el nombre que se ha pedido en el enunciado, si a la función de multiplicación por ejemplo la llamamos "multi" el autocorector no la encontrará y no nos dará los puntos. Lo mismo ocurre con los textos que se pide en los botones y campos informativos, Ponga exáctamente lo que se pide respetando mayúsculas y acentos.
 
-Se recomienda usar el patrón MVC como se ha visto en clase. En el modelo tendríamos dos variables donde guardar operando y operador. Y habría una sola vista que presenta el resultado o el error según ocurra.
-
 Se recomienda añadir algún separador adicional a los grupos de botones como muestra la imagen de ejemplo de la calculadora, así como un poco de CSS para darle algo de estilo.
 
 El texto que contienen los botones queda a elección del alumno. Es decir el botón suma podrá contener la palabra suma o el signo +, etc.
