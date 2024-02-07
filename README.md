@@ -19,10 +19,7 @@ En esta entrega vamos a desarrollar una aplicación web de calculadora, para ell
 <p align="center">
 <img src="https://user-images.githubusercontent.com/47325335/215490221-f0a4abde-acd2-47ef-b3db-bdea4a095989.png" alt="drawing" width="200"/>
 </p>
-![Captura de pantalla 2024-02-07 a las 15 14 26](https://github.com/CORE-UPM/P3_Calculadora_JS/assets/716928/c4cc97bc-dabb-4eee-9ee7-c07d8cfeaadd)
-<p align="center">
-<img src="https://user-images.githubusercontent.com/716928/c4cc97bc-dabb-4eee-9ee7-c07d8cfeaadd.png" alt="drawing" width="200"/>
-</p>
+
 
 
 ## Descargar el código del proyecto
