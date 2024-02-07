@@ -5,11 +5,11 @@
 
 # Entrega 3 - Calculadora JS
 
-Versión: 23 de Enero de 2024
+Versión: 7 de Febrero de 2024
 
 ## Objetivo
 
-Practicar con expresiones básicas, variables, asignaciones, if…else, switch…case, bucles, los tipos number, string, boolean, eventos sencillos, arrays, así como con objetos DOM y Date.
+Practicar con expresiones básicas, variables, asignaciones, if…else, switch…case, bucles, los tipos number, string, boolean, eventos sencillos, así como con objetos DOM y Date.
 
 ## Descripción de la práctica
 
@@ -30,7 +30,7 @@ Para superar esta entrega, el alumno tendrá que implementar las siguientes func
 
 ### 1. Desarrollo de la estructura de página básica y campo input:
 * Cree en el directorio del proyecto un archivo nuevo y pongale el nombre "index.html". En dicho archivo cree la estructura básica de una página HTML (html, head, body)
-* Añada un h2 con la clase "cabecera" (puede usar esta clase para añadir alguna propiedad css a este h2) y texto "Calculadora de CORE"
+* Añada un h1 con la clase "cabecera" (puede usar esta clase para añadir alguna propiedad css a este h1) y texto "Calculadora de CORE"
 * Añada un campo input de tipo texto y de id "pantalla"
 
 
@@ -64,10 +64,19 @@ Queremos que la calculadora sea un poco más robusta y funcione independientemen
 
 ### 6. Operadores encadenados
 
-Para agilizar el funcionamiento de la calculadora, se va a implementar una funcionalidad nueva que permita realizar varias operaciones seguidas. El usuario podrá pulsar la combinación 5 + 3 * 4 = y obtener el resultado 32 en lugar de 
-tener que introducir 5 + 3 = y a continuación * 4 = para obtener el resultado final. No es obligatorio mostrar en pantalla los resultados intermedios pero al pulsar el botón = se ha de mostrar el resultado final en pantalla.
+Para agilizar el funcionamiento de la calculadora, se debe implementar una funcionalidad que permita realizar varias operaciones seguidas. El usuario podrá pulsar la combinación 5 + 3 * 4 = y obtener el resultado 32 en lugar de 
+tener que introducir 5 + 3 = y a continuación * 4 = para obtener el resultado final. No es necesario mostrar en pantalla los resultados intermedios, pero al pulsar el botón = se ha de mostrar el resultado final en pantalla.
 
 Consejos para el desarrollo: Piense como puede saber cuál ha sido el último operador que se pulsó y cómo se ha de gestionar esta situación. Tenga cuidado al guardar el valor de los resultados intermedios, puesto que puede sobrescribir el valor al realizar la siguiente operación.
+
+### 7. Limpieza
+
+Añadir a la calculadora dos botones nuevos para limpiar la pantalla y el estado acumulado.
+
+El texto del botón que limpia la pantalla debe ser "C", tiene que tener un atributo id con el valor "clear", y al pulsarlo se debe llamar a una función llamada clear. La función clear debe borrar el contenido actual de la pantalla, y sustituirlo por un 0.
+
+El texto del botón que limpia el estado acumulado debe ser "AC", tiene que tener un atributo id con el valor "clearAll", y al pulsarlo se debe llamar a una función llamada clearAll. La función clearAll debe borrar el contenido actual de la pantalla sustituyéndolo por un 0, y además debe limpiar todas las variables usadas para guardar el estado sobre el encadenamiento de las operaciones.
+
 
 ## Consideraciones adicionales y recomendaciones
 
@@ -117,16 +126,28 @@ Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/m
 Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
 
 - **5%:** Existe la estructura de la cabecera y campo input.
-- **20%:** Las operaciones unitarias funcionan correctamente.
-  - **5%:** La función cuadrado funciona correctamente.
-  - **5%:** La función raiz funciona correctamente.
-  - **10%:** La función factorial funciona correctamente.
-- **40%:** Las operaciones unitarias funcionan correctamente.
-  - **10%:** La función suma funciona correctamente.
-  - **10%:** La función resta funciona correctamente.
-  - **10%:** La función multiplicación funciona correctamente.
-  - **10%:** La función división funciona correctamente.
-- **15%:** El campo informativo muestra los mensajes.
-- **10%:** Los errores se tratan correctamente
-- **10%:** La función suma actúa como acumulador.
+- **18%:** Las operaciones unitarias funcionan correctamente.
+  - **6%:** La función cuadrado funciona correctamente.
+  - **6%:** La función raiz funciona correctamente.
+  - **6%:** La función factorial funciona correctamente.
+- **24%:** Las operaciones binarias funcionan correctamente.
+  - **6%:** La función suma funciona correctamente.
+  - **6%:** La función resta funciona correctamente.
+  - **6%:** La función multiplicación funciona correctamente.
+  - **6%:** La función división funciona correctamente.
+- **9%:** El campo informativo muestra los mensajes.
+  - **3%:** Funciona correctamente para valores inferiores a 100.
+  - **3%:** Funciona correctamente para valores entre 100 y 200.
+  - **3%:** Funciona correctamente para valores superioes a 200.
+- **15%:** Los errores se tratan correctamente
+- **20%:** Acumulador.
+  - **5%:** La función suma acumula.
+  - **5%:** La función resta acumula.
+  - **5%:** La función multiplicar acumula.
+  - **5%:** La función dividir acumula.
+- **9%:** Limpieza.
+  - **3%:** La función clear limpia la pantalla.
+  - **3%:** La función clear solo limpia la pantalla.
+  - **3%:** La función clearAll limpia todo el estado.
+
 Si pasa todos los tests se dará la máxima puntuación.
