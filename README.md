@@ -9,7 +9,7 @@ Versión: 8 de Febrero de 2024
 
 ## Objetivo
 
-Practicar con expresiones básicas, variables, asignaciones, if…else, switch…case, bucles, los tipos number, string, boolean, eventos sencillos, así como con objetos DOM y Date.
+Practicar con expresiones básicas, variables, asignaciones, if…else, switch…case, bucles, los tipos number, string, boolean, eventos sencillos, y objetos DOM.
 
 ## Descripción de la práctica
 
