@@ -5,7 +5,7 @@
 
 # Entrega 3 - Calculadora JS
 
-Versión: 7 de Febrero de 2024
+Versión: 8 de Febrero de 2024
 
 ## Objetivo
 
@@ -75,7 +75,7 @@ Añadir a la calculadora dos botones nuevos para limpiar la pantalla y el estado
 
 El texto del botón que limpia la pantalla debe ser "C", tiene que tener un atributo id con el valor "clear", y al pulsarlo se debe llamar a una función llamada clear. La función clear debe borrar el contenido actual de la pantalla, y sustituirlo por un 0.
 
-El texto del botón que limpia el estado acumulado debe ser "AC", tiene que tener un atributo id con el valor "clearAll", y al pulsarlo se debe llamar a una función llamada clearAll. La función clearAll debe borrar el contenido actual de la pantalla sustituyéndolo por un 0, y además debe limpiar todas las variables usadas para guardar el estado sobre el encadenamiento de las operaciones.
+El texto del botón que limpia el estado acumulado debe ser "AC", tiene que tener un atributo id con el valor "clearAll", y al pulsarlo se debe llamar a una función llamada clearAll. La función clearAll debe borrar el contenido actual de la pantalla sustituyéndolo por un 0, y además debe limpiar todas las variables usadas para guardar el estado sobre el cálculo de las operaciones.
 
 
 ## Consideraciones adicionales y recomendaciones
