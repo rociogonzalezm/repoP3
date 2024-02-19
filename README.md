@@ -5,7 +5,7 @@
 
 # Entrega 3 - Calculadora JS
 
-Versión: 8 de Febrero de 2024
+Versión: 19 de Febrero de 2024
 
 ## Objetivo
 
@@ -40,7 +40,7 @@ Para superar esta entrega, el alumno tendrá que implementar las siguientes func
 * Añada un botón (button) que tenga el id "raiz" que llama a una función de nombre sqr() que calcula la raíz del número que el usuario ha escrito en el campo input y escribe el resultado en el mismo input. La función raíz se puede acceder mediante Math.sqrt(value);
 
 ### 3. Operaciones binarias:
-Las operaciones binarias (suma, resta, multiplicación, división, resto y potencia) consisten en dos operandos, un operador y se debe pulsar el signo igual para obtener el resultado. El funcionamiento sería como el de cualquier calculadora. Se introduce un primer número, se pulsa la operación, se introduce un segundo número y se pulsa el signo igual.
+Las operaciones binarias (suma, resta, multiplicación y división) consisten en dos operandos, un operador y se debe pulsar el signo igual para obtener el resultado. El funcionamiento sería como el de cualquier calculadora. Se introduce un primer número, se pulsa la operación, se introduce un segundo número y se pulsa el signo igual.
 
 Consejos para el desarrollo: Tenemos dos pulsaciones a botones. Primera, al pulsar cualquier operador binario, debe invocarse una función, que guarde en variables globales, tanto el número tecleado en el input, como un string indicando el operador pulsado (las variables globales son visibles dentro de todas las funciones del script y puedan utilizarse para pasar valores de una función a otra). Al pulsar el botón con el signo &quot;_=&quot;_ debe invocarse una nueva función que calcule el resultado, realizando la operación indicada por el operador guardado, utilizando el primer número (guardado en la variable global) y el segundo número que debe estar en el input.
 
