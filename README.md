@@ -32,6 +32,7 @@ Para superar esta entrega, el alumno tendrá que implementar las siguientes func
 * Cree en el directorio del proyecto un archivo nuevo y pongale el nombre "index.html". En dicho archivo cree la estructura básica de una página HTML (html, head, body)
 * Añada un h1 con la clase "cabecera" (puede usar esta clase para añadir alguna propiedad css a este h1) y texto "Calculadora de CORE"
 * Añada un campo input de tipo texto y de id "pantalla"
+* Añada la etiqueta **\<meta charset="UTF-8"\>** en el head del documento para que los caracteres se codifiquen en UTF-8.
 
 
 ### 2. Operaciones unitarias:
