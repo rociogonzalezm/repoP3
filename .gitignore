@@ -29,4 +29,5 @@ yarn-error.log*
 user.json
 /autocorector/data
 
+package-lock.json
 blog

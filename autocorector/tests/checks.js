@@ -543,10 +543,11 @@ describe("TEST SUITE DE LA Calculadora DE CORE", function () {
             this.score = 0.3;
             this.msg_ok = `Funcionalidad comprobada correctamente`;
 
-            this.msg_err = "No se encuentra el botón con id 'clear'";
-            browser.assert.element('button#clear');
+            this.msg_err = "No se encuentra el botón con id 'clearScreen'";
+            browser.assert.element('button#clearScreen');
+            this.msg_err = "El botón C no funciona correctamente";
             [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 30));
-            [error_nav, resp] = await Utils.to(browser.click('#clear'));
+            [error_nav, resp] = await Utils.to(browser.click('#clearScreen'));
             browser.assert.input("#pantalla", 0);
         });
 
@@ -555,19 +556,19 @@ describe("TEST SUITE DE LA Calculadora DE CORE", function () {
             this.score = 0.3;
             this.msg_ok = `Funcionalidad comprobada correctamente`;
 
-            this.msg_err = "No se encuentra el botón con id 'clear'";
-            browser.assert.element('button#clear');
+            this.msg_err = "No se encuentra el botón con id 'clearScreen'";
+            browser.assert.element('button#clearScreen');
             this.msg_err = "No se encuentra el botón con id 'suma'";
             browser.assert.element('button#suma');
             this.msg_err = "No se encuentra el botón con id 'igual'";
             browser.assert.element('button#igual');
-            this.msg_err = "El acumulador no funciona correctamente al usar la suma.";
+            this.msg_err = "El botón C no funciona correctamente";
             [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 0));
             [error_nav, resp] = await Utils.to(browser.click('#igual'));
             [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 2));
             [error_nav, resp] = await Utils.to(browser.click('#suma'));
             [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 3));
-            [error_nav, resp] = await Utils.to(browser.click('#clear'));
+            [error_nav, resp] = await Utils.to(browser.click('#clearScreen'));
             [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 8));
             [error_nav, resp] = await Utils.to(browser.click('#igual'));
             browser.assert.input("#pantalla", 10);
@@ -584,7 +585,7 @@ describe("TEST SUITE DE LA Calculadora DE CORE", function () {
             browser.assert.element('button#suma');
             this.msg_err = "No se encuentra el botón con id 'igual'";
             browser.assert.element('button#igual');
-            this.msg_err = "El acumulador no funciona correctamente al usar la suma.";
+            this.msg_err = "El botón AC no funciona correctamente";
             [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 0));
             [error_nav, resp] = await Utils.to(browser.click('#igual'));
             [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 2));
