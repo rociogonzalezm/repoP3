@@ -23,8 +23,8 @@ function assign() {
           try { window.mul = mul; } catch (e){}
           try { window.eq = eq; } catch (e){}
           try { window.sqr = sqr; } catch (e){}
-          try { window.c = c; } catch (e){}
-          try { window.ac = ac; } catch (e){}
+          try { window.clearScreen = clearScreen; } catch (e){}
+          try { window.clearAll = clearAll; } catch (e){}
         })()`);
     } catch (e) {
         console.log("ERROR evaluando funciones creadas en el browser de ZombieJS", e);
