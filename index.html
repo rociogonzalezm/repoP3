@@ -4,6 +4,14 @@
         <meta charset="UTF-8">
         <script type="text/javascript">
            
+           const getInputValue = () =>{
+            return Number(document.getElementById("pantalla").value);
+           };
+
+           const setInputValue = (value){
+            getInputValue=value;
+           };
+           
            const onload = () => {
                 let botonCuadrado= document.getElementById("cuadrado");
                 let valorInput= document.getElementById("pantalla");
