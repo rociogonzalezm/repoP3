@@ -16,10 +16,14 @@
                 let botonCuadrado= document.getElementById("cuadrado");
                 let valorInput= document.getElementById("pantalla");
                 
-                const funcionCuad = () =>{
+                const sq = () =>{
                     valorInput.value= valorInput.value*valorInput.value;
                 }
-                botonCuadrado.addEventListener("click",funcionCuad);
+                const fact = () =>{
+
+                }
+                botonCuadrado.addEventListener("click",sq);
+                document.getElementById("factorial").addEventListener("click",fact);
 
               
             };
@@ -33,6 +37,7 @@
             <label for="pantalla">Introducir número:</label>
             <input type="text" id="pantalla">
             <button id="cuadrado">x <sup>2</sup></button>
+            <button id="factorial">x!</button>
         </div>
     </body>
 </html>
