@@ -22,7 +22,13 @@
                     }
                   setInputValue(res);
                 };
-                
+           
+           const sqr = () => {
+            let inputValue= getInputValue();
+            let res= Math.sqrt(inputValue);
+            setInputValue(res);
+
+           }     
            const onload = () => {
                 let botonCuadrado= document.getElementById("cuadrado");
                 let valorInput= document.getElementById("pantalla");
@@ -33,6 +39,7 @@
                 
                 botonCuadrado.addEventListener("click",sq);
                 document.getElementById("factorial").addEventListener("click",fact);
+                document.getElementById("raiz").addEventListener("click", sqr);
 
               
             };
