@@ -11,7 +11,15 @@
            const setInputValue = (value) =>{
             getInputValue=value;
            };
-
+           const fact = () =>{
+                    let res=1;
+                    let inputValue= getInputValue();
+                    for(let index=inputValue; index>1; index--){
+                        res*= inputValue;
+                    }
+                   setInputValue(res);
+                   getInputValue;
+                }
            const onload = () => {
                 let botonCuadrado= document.getElementById("cuadrado");
                 let valorInput= document.getElementById("pantalla");
@@ -19,14 +27,7 @@
                 const sq = () =>{
                     valorInput.value= valorInput.value*valorInput.value;
                 }
-                const fact = () =>{
-                    let res=1;
-                    let inputValue= getInputValue();
-                    for(let index=inputValue; index>1; index--){
-                        res*= inputValue;
-                    }
-                   setInputValue(res);
-                }
+                
                 botonCuadrado.addEventListener("click",sq);
                 document.getElementById("factorial").addEventListener("click",fact);
 
