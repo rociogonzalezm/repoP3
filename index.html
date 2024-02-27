@@ -8,8 +8,9 @@
             return Number(document.getElementById("pantalla").value);
            };
 
-           const setInputValue = (value) =>{
-            getInputValue=value;
+           const setInputValue = (valor) =>{
+            document.getElementById("pantalla").value= valor;
+           
            };
           
            const fact = () =>{
@@ -19,8 +20,9 @@
                     for(let index=inputValue; index>1; index--){
                         res*= index;
                     }
-                   document.getElementById("pantalla").value=res;
+                  setInputValue(res);
                 };
+                
            const onload = () => {
                 let botonCuadrado= document.getElementById("cuadrado");
                 let valorInput= document.getElementById("pantalla");
@@ -45,6 +47,7 @@
             <input type="text" id="pantalla">
             <button id="cuadrado">x <sup>2</sup></button>
             <button id="factorial">x!</button>
+            <button id="raiz">&#8730 x</button>
         </div>
     </body>
 </html>
