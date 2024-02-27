@@ -11,22 +11,23 @@
            const setInputValue = (value) =>{
             getInputValue=value;
            };
+          
            const fact = () =>{
-                    let res=1;
+                    
                     let inputValue= getInputValue();
+                    let res=1;
                     for(let index=inputValue; index>1; index--){
-                        res*= inputValue;
+                        res*= index;
                     }
-                   setInputValue(res);
-                   getInputValue;
-                }
+                   document.getElementById("pantalla").value=res;
+                };
            const onload = () => {
                 let botonCuadrado= document.getElementById("cuadrado");
                 let valorInput= document.getElementById("pantalla");
                 
                 const sq = () =>{
                     valorInput.value= valorInput.value*valorInput.value;
-                }
+                };
                 
                 botonCuadrado.addEventListener("click",sq);
                 document.getElementById("factorial").addEventListener("click",fact);
