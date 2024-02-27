@@ -3,14 +3,15 @@
         <title>Calculadora de Rocio</title>
         <meta charset="UTF-8">
         <script type="text/javascript">
-            const onload = () => {
+           
+           const onload = () => {
                 let botonCuadrado= document.getElementById("cuadrado");
                 let valorInput= document.getElementById("pantalla");
                 botonCuadrado.addEventListener("click",() =>{
-                   valorInput.innerHTML= valorInput.value*valorInput.value;
+                   valorInput.value= valorInput.value*valorInput.value;
 
 
-                })
+                });
 
               
             };
