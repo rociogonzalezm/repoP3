@@ -7,11 +7,11 @@
            const onload = () => {
                 let botonCuadrado= document.getElementById("cuadrado");
                 let valorInput= document.getElementById("pantalla");
-                botonCuadrado.addEventListener("click",() =>{
-                   valorInput.value= valorInput.value*valorInput.value;
-
-
-                });
+                
+                const funcionCuad = () =>{
+                    valorInput.value= valorInput.value*valorInput.value;
+                }
+                botonCuadrado.addEventListener("click",funcionCuad);
 
               
             };
