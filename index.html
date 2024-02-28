@@ -33,6 +33,20 @@
             setInputValue(res);
 
            }     
+           // OPERACIONES BINARIAS
+           let acumulador = 0;
+           let operador="";
+
+           const acumula = n => {
+            switch(operador){
+                case "":
+                    acumulador= n;
+                    break;
+                case "+":
+                    acumulador += n;
+                    break;
+            }
+           }
            const onload = () => {
                 let botonCuadrado= document.getElementById("cuadrado");
                 let valorInput= document.getElementById("pantalla");
