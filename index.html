@@ -47,6 +47,12 @@
                     break;
             }
            }
+
+           const add = () => {
+            acumula(getInputValue());
+            operador = "+";
+            vaciarInput();
+           }
            const onload = () => {
                 let botonCuadrado= document.getElementById("cuadrado");
                 let valorInput= document.getElementById("pantalla");
