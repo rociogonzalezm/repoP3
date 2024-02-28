@@ -16,21 +16,56 @@
            const vaciarInput = () => {
             document.getElementById("pantalla").value="";
            }
+
+           const validar = () => {
+                if(Number.isNaN(getInputValue())) {
+                    setInputValue("Error");
+                    return false;
+                }
+                return true;
+           }
+
+           const rellenarInfo =() =>{
+            const resultadoInput= getInputValue();
+            let frase= "";
+
+            if (Number.isNaN(resultadoInput)){
+                frase = "Error";
+            }
+            else{
+                if(resultadoInput < 100){
+                    frase = "Info: El resultado es menor que 100";
+                }
+                else if (resultadoInput > 200){
+                    frase = "Info: El resultado es superior a 200";
+                }
+                else{
+                    frase ="Info: El resultado está entre 100 y 200";
+                }
+            }
+            document.getElementById("info").innerHTML= frase;
+
+           }
           
            const fact = () =>{
-                    
+            if(!validar()) return;
+
                     let inputValue= getInputValue();
                     let res=1;
                     for(let index=inputValue; index>1; index--){
                         res*= index;
                     }
                   setInputValue(res);
+                  rellenarInfo();
                 };
            
            const sqr = () => {
-            let inputValue= getInputValue();
-            let res= Math.sqrt(inputValue);
-            setInputValue(res);
+                if(!validar()) return;
+
+                let inputValue= getInputValue();
+                let res= Math.sqrt(inputValue);
+                setInputValue(res);
+                rellenarInfo();
 
            }     
            // OPERACIONES BINARIAS
@@ -59,35 +94,50 @@
            }
 
            const add = () => {
+            if(!validar()) return;
+
             acumula(getInputValue());
             operador = "+";
             vaciarInput();
+            rellenarInfo();
            }
 
            const sub = () => {
+            if(!validar()) return;
+
             acumula(getInputValue());
             operador = "-";
             vaciarInput();
+            rellenarInfo();
            }
 
            const mul = () => {
+            if(!validar()) return;
+
             acumula(getInputValue());
             operador = "*";
             vaciarInput();
+            rellenarInfo();
            }
 
            const div = () => {
+            if(!validar()) return;
+
             acumula(getInputValue());
             operador = "/";
             vaciarInput();
+            rellenarInfo();
            }
 
 
            const eq = () => {
+            if(!validar()) return;
+
             acumula(getInputValue());
             operador="=";
             vaciarInput();
             setInputValue(acumulador);
+            rellenarInfo();
            }
            
            const onload = () => {
@@ -109,6 +159,11 @@
                 document.getElementById("multiplicacion").addEventListener("click",mul);
                 document.getElementById("division").addEventListener("click",div);
 
+                //INPUT
+                document.getElementById("pantalla").addEventListener("click",vaciarInput);
+                
+
+
 
               
             };
@@ -121,6 +176,10 @@
         <div id="input">
             <label for="pantalla">Introducir número:</label>
             <input type="text" id="pantalla">
+
+            <h2 id="info" class ="grande" title ="Info sobre el número">Info sobre el número</h2>
+
+
             <div id="Unitarias">
                 <button id="cuadrado">x <sup>2</sup></button>
                 <button id="factorial">x!</button>
@@ -132,8 +191,9 @@
                 <button id="multiplicacion">*</button>
                 <button id="division">/</button>
                 <button id="igual">=</button>
-               
-
+            </div>
+            <div id ="limpieza">
+                <button id="clearScreen">C</button>
 
             </div>
            
