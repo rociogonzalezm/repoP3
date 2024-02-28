@@ -45,6 +45,7 @@
                 case "+":
                     acumulador += n;
                     break;
+                
             }
            }
 
@@ -53,6 +54,14 @@
             operador = "+";
             vaciarInput();
            }
+
+           const eq = () => {
+            acumula(getInputValue());
+            operador="=";
+            vaciarInput();
+            setInputValue(acumulador);
+           }
+           
            const onload = () => {
                 let botonCuadrado= document.getElementById("cuadrado");
                 let valorInput= document.getElementById("pantalla");
@@ -67,6 +76,7 @@
                 
                 //OP BINARIAS
                 document.getElementById("suma").addEventListener("click", add);
+                document.getElementById("igual").addEventListener("click",eq);
 
               
             };
@@ -86,6 +96,8 @@
             </div>
             <div id="Binarias">
                 <button id="suma">+</button>
+                <button id="igual">=</button>
+               
 
 
             </div>
